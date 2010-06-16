@@ -1,0 +1,20 @@
+<project name="Amazon SNS Example" default="build" basedir=".">
+  
+  <path id="aws.java.sdk.classpath">
+    <fileset dir="lib" includes="**/*.jar"/>
+    <pathelement location="."/>
+  </path>
+
+  <target name="build">
+    <javac srcdir="." destdir="." classpathref="aws.java.sdk.classpath"/>
+  </target>
+
+  <target name="sender" depends="build">
+    <java classname="AmazonSNSSender" classpathref="aws.java.sdk.classpath" fork="true"/>
+  </target>
+
+  <target name="receiver" depends="build">
+    <java classname="AmazonSNSReceiver" classpathref="aws.java.sdk.classpath" fork="true"/>
+  </target>
+
+</project>
