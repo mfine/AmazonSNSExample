@@ -14,7 +14,9 @@
   </target>
 
   <target name="receiver" depends="build">
-    <java classname="AmazonSNSReceiver" classpathref="aws.java.sdk.classpath" fork="true"/>
+    <java classname="AmazonSNSReceiver" classpathref="aws.java.sdk.classpath" fork="true">
+      <arg line="${args}"/>
+    </java>
   </target>
 
 </project>
