@@ -8,10 +8,10 @@ To start a sender, run:
 
    > ant sender
 
-To start a receiver, run
+To start a receiver, run:
 
    > ant receiver
 
-To start a receiver on port 9000, run
+To start a receiver on port 9000, run:
 
    > ant receiver -Dargs=9000
