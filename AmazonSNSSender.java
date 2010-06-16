@@ -10,9 +10,9 @@ import com.amazonaws.services.sns.model.PublishRequest;
 // Example SNS Sender
 public class AmazonSNSSender {
 
-    // AWS credentials
-    static String ACCESS_KEY = "<AWS Access Key>";
-    static String SECRET_KEY = "<AWS Secret Key>";
+    // AWS credentials -- replace with your credentials
+    static String ACCESS_KEY = "<Your AWS Access Key>";
+    static String SECRET_KEY = "<Your AWS Secret Key>";
 
     // Sender loop
     public static void main(String... args) throws Exception {

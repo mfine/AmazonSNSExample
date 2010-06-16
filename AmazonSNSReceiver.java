@@ -27,9 +27,9 @@ import org.mortbay.jetty.handler.AbstractHandler;
 // Example SNS Receiver
 public class AmazonSNSReceiver {
 
-    // AWS credentials
-    static String ACCESS_KEY = "<AWS Access Key>";
-    static String SECRET_KEY = "<AWS Secret Key>";
+    // AWS credentials -- replace with your credentials
+    static String ACCESS_KEY = "<Your AWS Access Key>";
+    static String SECRET_KEY = "<Your AWS Secret Key>";
 
     // Shared queue for notifications from HTTP server
     static BlockingQueue<Map<String, String>> messageQueue = new LinkedBlockingQueue<Map<String, String>>();

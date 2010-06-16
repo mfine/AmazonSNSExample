@@ -1,4 +1,4 @@
-AmazonSNSExample contains a simple example sender and receiver, along with the dependent libraries from AWS, Jetty, and Jackson.
+AmazonSNSExample contains a simple example sender and receiver, along with the dependent libraries from AWS, Jetty, and Jackson. To use, replace with your AWS credentials in both AWSSNSSender.java and AWSSNSReceiver.java.
 
 To compile the files, run:
 
